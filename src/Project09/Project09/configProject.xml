@@ -42,15 +42,15 @@
 	</module>
 
 	<module name="plans">
-		<param name="inputPlansFile" value="C:\Users\Marie\Documents\Master\OOP Java\UrbanEVProject09\src\Project09\Project09\evPopulation5_new.xml" />
+		<param name="inputPlansFile" value="C:\Users\Marie\Documents\Master\OOP Java\UrbanEVProject09\src\Project09\Project09\evPopulation_1percent_new.xml" />
 	</module>
 
 
 	<module name="controler">
-		<param name="outputDirectory" value="C:\Users\Marie\Documents\Master\OOP Java\UrbanEVProject09\src\Project09\Project09\output_Base" />
+		<param name="outputDirectory" value="C:\Users\Marie\Documents\Master\OOP Java\UrbanEVProject09\src\Project09\Project09\output_1" />
 		<param name="overwriteFiles" value="deleteDirectoryIfExists" />
 		<param name="firstIteration" value="0"/>
-		<param name="lastIteration" value="5"/>
+		<param name="lastIteration" value="3"/>
 		<param name="eventsFileFormat" value="xml"/>
 		<param name="mobsim" value="qsim"/>
 		<param name="writeEventsInterval" value="50"/>
