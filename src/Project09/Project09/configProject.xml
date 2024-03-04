@@ -12,18 +12,19 @@
 	</module>
 
 	<module name="urban_ev">
-		<param name="parkingSearchRadius" value="500"/>
+		<param name="parkingSearchRadius" value="1000"/>
+		<param name="defaultRangeAnxietyThreshold" value="0.2"/>
 		<param name="vehicleTypesFile" value="C:\Users\Marie\Documents\Master\OOP Java\UrbanEVProject09\scenarios\munich\vehicletypes.xml"/>
 		<param name="rangeAnxietyUtility" value="-10"/>
 		<param name="emptyBatteryUtility" value="-15"/>
-		<param name="walkingUtility" value="0"/>
+		<param name="walkingUtility" value="-1"/>
 		<param name="homeChargingUtility" value="+1"/>
 		<param name="socDifferenceUtility" value="-10"/>
 		<param name="maxNumberSimultaneousPlanChanges" value="2"/>
 		<param name="timeAdjustmentProbability" value="0.1"/>
 		<param name="maxTimeFlexibility" value="600"/>
 		<param name="generateHomeChargersByPercentage" value="false"/>
-		<param name="homeChargerPercentage" value="50"/>
+		<param name="homeChargerPercentage" value="80"/>
 		<param name="defaultHomeChargerPower" value="11"/>
 		<param name="generateWorkChargersByPercentage" value="false"/>
 		<param name="workChargerPercentage" value="20"/>
@@ -42,15 +43,15 @@
 	</module>
 
 	<module name="plans">
-		<param name="inputPlansFile" value="C:\Users\Marie\Documents\Master\OOP Java\UrbanEVProject09\src\Project09\Project09\evPopulation_1percent_new.xml" />
+		<param name="inputPlansFile" value="C:\Users\Marie\Documents\Master\OOP Java\UrbanEVProject09\src\Project09\Project09\evPopulation0.1_HomeCharging.xml" />
 	</module>
 
 
 	<module name="controler">
-		<param name="outputDirectory" value="C:\Users\Marie\Documents\Master\OOP Java\UrbanEVProject09\src\Project09\Project09\output_1" />
+		<param name="outputDirectory" value="C:\Users\Marie\Documents\Master\OOP Java\UrbanEVProject09\src\Project09\Project09\output_0.1" />
 		<param name="overwriteFiles" value="deleteDirectoryIfExists" />
 		<param name="firstIteration" value="0"/>
-		<param name="lastIteration" value="3"/>
+		<param name="lastIteration" value="2"/>
 		<param name="eventsFileFormat" value="xml"/>
 		<param name="mobsim" value="qsim"/>
 		<param name="writeEventsInterval" value="50"/>
@@ -62,7 +63,7 @@
 	<module name="qsim">
 		<!-- "start/endTime" of MobSim (00:00:00 == take earliest activity time/ run as long as active vehicles exist) -->
 		<param name="startTime" value="00:00:00"/>
-		<param name="endTime" value="168:00:00"/>
+		<param name="endTime" value="180:00:00"/>
 	</module>
 
 	<module name= "strategy">
