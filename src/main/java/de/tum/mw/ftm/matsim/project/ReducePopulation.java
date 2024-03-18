@@ -34,7 +34,6 @@ public class ReducePopulation {
             for (int i = 0; i < personList.getLength(); i += 2) {
                 Node personNode = personList.item(i);
                 if (personNode.getNodeType() == Node.ELEMENT_NODE) {
-                    // Import the node into the new document
                     Node importedNode = reducedDocument.importNode(personNode, true);
                     root.appendChild(importedNode);
                 }
